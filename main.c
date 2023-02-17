@@ -74,6 +74,9 @@ int main() {
         if (valid_board(player_tab) == 0) {
             printf("\nBrawo!\n");
         }
+        if(inserted_counter+predetermined_counter==81) {
+            printf("\nGame over!\n");
+        }
 
 
         print_tab(player_tab);
