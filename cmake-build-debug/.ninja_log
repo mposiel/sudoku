@@ -8,3 +8,5 @@
 3	149	6983703957719370	CMakeFiles/sudoku.dir/random-board-generator.c.obj	365b9da638509a26
 9	153	6983703957760042	CMakeFiles/sudoku.dir/main.c.obj	eb4db77aad34e9cc
 153	313	6983703959304887	sudoku.exe	f592df4e0143272b
+3	127	6983705176734420	CMakeFiles/sudoku.dir/random-board-generator.c.obj	365b9da638509a26
+128	302	6983705178450341	sudoku.exe	f592df4e0143272b

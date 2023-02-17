@@ -19,23 +19,7 @@ void board_generator(int *tab) {
 
     int counter = 25;
 
-//    switch (level) {
-//        case 1:
-//            counter = rand() % 5 + 38;
-//            break;
-//        case 2:
-//            counter = rand() % 4 + 34;
-//            break;
-//        case 3:
-//            counter = rand() % 6 + 28;
-//            break;
-//        case 4:
-//            counter = rand() % 4 + 23;
-//            break;
-//        case 5:
-//            counter = rand() % 3 + 21;
-//            break;
-//    }
+
 
     int cords[counter][2];
     for (int i = 0; i < counter; i++) {
