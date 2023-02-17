@@ -3,6 +3,7 @@
 //
 
 #include "valid-board.h"
+#include "solver.h"
 
 int valid_row(int *tab, int row) {
 
@@ -96,4 +97,15 @@ int valid_board(int *tab) {
         }
     }
     return 0;
+}
+
+int solvable(int *tab ) {
+    int temp_tab[9][9];
+    for (int i = 0; i < 9; ++i) {
+        for (int j = 0; j < 9; ++j) {
+            temp_tab[i][j] = *(tab+(i*9)+j);
+        }
+    }
+    int result = solve(temp_tab);
+    return result;
 }

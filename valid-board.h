@@ -10,5 +10,7 @@ int valid_column(int* tab, int column);
 int valid_box(int* tab, int box_column, int box_row);
 int valid_board(int* tab);
 
+int solvable(int *tab);
+
 
 #endif //SUDOKU_VALID_BOARD_H

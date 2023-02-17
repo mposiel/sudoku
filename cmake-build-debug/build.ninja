@@ -67,6 +67,12 @@ build CMakeFiles/sudoku.dir/solver.c.obj: C_COMPILER__sudoku_Debug C$:/Users/Mak
   OBJECT_DIR = CMakeFiles\sudoku.dir
   OBJECT_FILE_DIR = CMakeFiles\sudoku.dir
 
+build CMakeFiles/sudoku.dir/random-board-generator.c.obj: C_COMPILER__sudoku_Debug C$:/Users/Maks/CLionProjects/sudoku/random-board-generator.c || cmake_object_order_depends_target_sudoku
+  DEP_FILE = CMakeFiles\sudoku.dir\random-board-generator.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles\sudoku.dir
+  OBJECT_FILE_DIR = CMakeFiles\sudoku.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target sudoku
@@ -75,7 +81,7 @@ build CMakeFiles/sudoku.dir/solver.c.obj: C_COMPILER__sudoku_Debug C$:/Users/Mak
 #############################################
 # Link the executable sudoku.exe
 
-build sudoku.exe: C_EXECUTABLE_LINKER__sudoku_Debug CMakeFiles/sudoku.dir/main.c.obj CMakeFiles/sudoku.dir/valid-board.c.obj CMakeFiles/sudoku.dir/solver.c.obj
+build sudoku.exe: C_EXECUTABLE_LINKER__sudoku_Debug CMakeFiles/sudoku.dir/main.c.obj CMakeFiles/sudoku.dir/valid-board.c.obj CMakeFiles/sudoku.dir/solver.c.obj CMakeFiles/sudoku.dir/random-board-generator.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\sudoku.dir

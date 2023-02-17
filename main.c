@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include "valid-board.h"
 #include "solver.h"
+#include "random-board-generator.h"
 
 
-void print_tab(int *tab) {
+void print_tab(int* tab) {
+
     printf("    1 2 3   4 5 6   7 8 9  \n");
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {
@@ -29,16 +31,19 @@ void print_tab(int *tab) {
 }
 
 int main() {
-    int tab[9][9] = {{0, 0, 0, 3, 5, 0, 0, 0, 1},
-                     {6, 0, 3, 0, 1, 4, 0, 0, 0},
-                     {0, 1, 4, 0, 0, 0, 0, 7, 3},
-                     {2, 8, 0, 1, 0, 3, 0, 0, 9},
-                     {0, 0, 6, 0, 0, 0, 0, 0, 2},
-                     {7, 0, 1, 0, 2, 0, 0, 5, 0},
-                     {9, 5, 2, 4, 7, 1, 0, 0, 0},
-                     {0, 0, 0, 0, 0, 2, 0, 0, 0},
-                     {0, 0, 0, 0, 0, 5, 9, 2, 0}
-    };
+
+
+    int tab[9][9];
+    board_generator(tab);
+
+    while(1) {
+        if (solvable(tab)==0) {
+            board_generator(tab);
+        } else {
+            break;
+        }
+    }
+
 
     int predetermined_counter = 0;
 
@@ -225,8 +230,8 @@ int main() {
             printf("Twoja plansza:\n\n");
         } else if (opcja == 4) {
             printf("\nRozwiazanie:\n\n");
-            solve(player_tab);
-            print_tab(player_tab);
+            solve(tab);
+            print_tab(tab);
             printf("Koniec gry!");
             break;
         } else if (opcja == 5) {
