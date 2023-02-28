@@ -1,12 +1,16 @@
 # ninja log v5
-188	372	6983702001649502	sudoku.exe	df1d5c2015b0ab19
-2	183	6983701999829189	CMakeFiles/sudoku.dir/main.c.obj	eb4db77aad34e9cc
+128	302	6983705178450341	sudoku.exe	f592df4e0143272b
+9	153	6983703957760042	CMakeFiles/sudoku.dir/main.c.obj	eb4db77aad34e9cc
 9	132	6983699230096239	CMakeFiles/sudoku.dir/random-board-creator.c.obj	4f387bc0653bf782
 3	109	6983701613763683	CMakeFiles/sudoku.dir/valid-board.c.obj	66d1ee6d51e17060
+2	316	6985275359455491	build.ninja	f94ef2e8ebd8be85
 3	132	6983675462785978	CMakeFiles/sudoku.dir/solver.c.obj	378935808e812d41
-2	316	6983703955708930	build.ninja	f94ef2e8ebd8be85
-3	149	6983703957719370	CMakeFiles/sudoku.dir/random-board-generator.c.obj	365b9da638509a26
-9	153	6983703957760042	CMakeFiles/sudoku.dir/main.c.obj	eb4db77aad34e9cc
-153	313	6983703959304887	sudoku.exe	f592df4e0143272b
 3	127	6983705176734420	CMakeFiles/sudoku.dir/random-board-generator.c.obj	365b9da638509a26
-128	302	6983705178450341	sudoku.exe	f592df4e0143272b
+4	300	6992843601264265	CMakeFiles/sudoku.dir/main.c.obj	eb4db77aad34e9cc
+304	534	6992843603471120	sudoku.exe	f592df4e0143272b
+6	177	6993052333470063	CMakeFiles/sudoku.dir/main.c.obj	eb4db77aad34e9cc
+181	373	6993052335364808	sudoku.exe	f592df4e0143272b
+2	138	6993053764948147	CMakeFiles/sudoku.dir/main.c.obj	eb4db77aad34e9cc
+143	451	6993053767882658	sudoku.exe	f592df4e0143272b
+4	201	6993057079968826	CMakeFiles/sudoku.dir/main.c.obj	eb4db77aad34e9cc
+203	422	6993057082054357	sudoku.exe	f592df4e0143272b
