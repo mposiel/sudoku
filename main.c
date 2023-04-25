@@ -77,7 +77,7 @@ int main() {
     while (1) {
 
         if (valid_board(player_tab) == 0) {
-            printf("\nBrawo!\n");
+            printf("\nGood job!\n");
         }
         if(inserted_counter+predetermined_counter==81) {
             printf("\nGame over!\n");
@@ -85,35 +85,19 @@ int main() {
 
 
         print_tab(player_tab);
-//        int opcja;
-//        while (1) {
-//            printf("Wybierz opcje:\n1. Wstaw liczbe\n2. Usun liczbe\n3. Pokaz poczatkowa plansze\n4. Pokaz rozwiazanie\n5. Zakoncz gre\nOpcja nr:");
-//
-//            if (scanf("%d", &opcja) != 1) {
-//                printf("Wpisz liczbe od 1 do 5!");
-//                continue;
-//            }
-//
-//            if (opcja != 1 && opcja != 2 && opcja != 3 && opcja != 4 && opcja != 5) {
-//                printf("Wpisz liczbe od 1 do 5!");
-//                continue;
-//            }
-//
-//            break;
-//        }
 
         int opcja;
         while (1) {
-            printf("Wybierz opcje:\n1. Wstaw liczbe\n2. Usun liczbe\n3. Pokaz poczatkowa plansze\n4. Pokaz rozwiazanie\n5. Zakoncz gre\nOpcja nr:");
+            printf("Choose an option:\n1. Insert number\n2. Delete number\n3. Show the initial board\n4. Show solution\n5. End the game\nOption number:");
 
             if (scanf("%d", &opcja) != 1) {
-                printf("Wpisz liczbe od 1 do 5!\n");
+                printf("Enter a number from 1 to 5!\n");
                 while (getchar() != '\n') continue;
                 continue;
             }
 
             if (opcja < 1 || opcja > 5) {
-                printf("Wpisz liczbe od 1 do 5!\n");
+                printf("Enter a number from 1 to 5!\n");
                 continue;
             }
 
@@ -126,14 +110,14 @@ int main() {
             while (1) {
 
                 while (1) {
-                    printf("Podaj numer rzedu:");
+                    printf("Enter row number:");
                     if (scanf("%d", &row) != 1) {
-                        printf("Podaj liczbe od 1 do 9!\n");
+                        printf("Enter a number from 1 to 9!\n");
                         while (getchar() != '\n') continue;
                         continue;
                     }
                     if (row < 1 || row > 9) {
-                        printf("Podaj liczbe od 1 do 9!\n");
+                        printf("Enter a number from 1 to 9!\n");
                         continue;
                     }
                     row--;
@@ -142,14 +126,14 @@ int main() {
                 }
 
                 while (1) {
-                    printf("Podaj numer kolumny:");
+                    printf("Enter column number:");
                     if (scanf("%d", &column) != 1) {
-                        printf("Podaj liczbe od 1 do 9!\n ");
+                        printf("Enter a number from 1 to 9!\n ");
                         while (getchar() != '\n') continue;
                         continue;
                     }
                     if (column < 1 || column > 9) {
-                        printf("Podaj liczbe od 1 do 9!\n");
+                        printf("Enter a number from 1 to 9!\n");
                         continue;
                     }
                     column--;
@@ -160,7 +144,7 @@ int main() {
 
                 for (int i = 0; i < predetermined_counter; ++i) {
                     if (row == predetermined_cord[i][0] && column == predetermined_cord[i][1]) {
-                        printf("Tej liczby nie mozna zmienic!\n");
+                        printf("This number cannot be changed!\n");
                         flag++;
                     }
                 }
@@ -169,14 +153,14 @@ int main() {
                     continue;
                 } else {
                     while (1) {
-                        printf("Podaj liczbe od 1 do 9:");
+                        printf("Enter a number from 1 to 9:");
                         if (scanf("%d", &val) != 1) {
-                            printf("Wartosca musi byc liczba w przedziale od 1 do 9!\n");
+                            printf("The value must be a number between 1 and 9!\n");
                             while (getchar() != '\n') continue;
                             continue;
                         }
                         if (val < 1 || val > 9) {
-                            printf("Wartosca musi byc liczba w przedziale od 1 do 9!\n");
+                            printf("The value must be a number between 1 and 9!\n");
                             continue;
                         }
                         break;
@@ -195,19 +179,19 @@ int main() {
             int row, column;
             while (1) {
                 if (inserted_counter == 0) {
-                    printf("\nNajpierw wstaw liczbe!\n");
+                    printf("\nPut in the number first!\n");
                     break;
                 }
 
                 while (1) {
-                    printf("Podaj numer rzedu:");
+                    printf("Enter row number:");
                     if (scanf("%d", &row) != 1) {
-                        printf("Podaj liczbe od 1 do 9!\n");
+                        printf("Enter a number from 1 to 9!\n");
                         while (getchar() != '\n') continue;
                         continue;
                     }
                     if (row < 1 || row > 9) {
-                        printf("Podaj liczbe od 1 do 9!\n");
+                        printf("Enter a number from 1 to 9!\n");
                         continue;
                     }
                     row--;
@@ -216,14 +200,14 @@ int main() {
                 }
 
                 while (1) {
-                    printf("Podaj numer kolumny:");
+                    printf("Enter column number:");
                     if (scanf("%d", &column) != 1) {
-                        printf("Podaj liczbe od 1 do 9!\n");
+                        printf("Enter a number from 1 to 9!\n");
                         while (getchar() != '\n') continue;
                         continue;
                     }
                     if (column < 1 || column > 9) {
-                        printf("Podaj liczbe od 1 do 9!\n");
+                        printf("Enter a number from 1 to 9!\n");
                         continue;
                     }
                     column--;
@@ -234,7 +218,7 @@ int main() {
 
                 for (int i = 0; i < predetermined_counter; ++i) {
                     if (row == predetermined_cord[i][0] && column == predetermined_cord[i][1]) {
-                        printf("Tej liczby nie mozna zmienic!\n");
+                        printf("This number cannot be changed!\n");
                         flag++;
                     }
                 }
@@ -250,17 +234,17 @@ int main() {
 
             }
         } else if (opcja == 3) {
-            printf("\nPoczatkowa plansza:\n\n");
+            printf("\nStarting board:\n\n");
             print_tab(&tab);
-            printf("Twoja plansza:\n\n");
+            printf("Your board:\n\n");
         } else if (opcja == 4) {
-            printf("\nRozwiazanie:\n\n");
+            printf("\nSolution:\n\n");
             solve(tab);
             print_tab(tab);
-            printf("Koniec gry!");
+            printf("Game over!");
             break;
         } else if (opcja == 5) {
-            printf("Koniec gry!");
+            printf("Game over!");
             break;
         }
 
